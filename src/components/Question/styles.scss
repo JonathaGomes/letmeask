@@ -1,11 +1,11 @@
 .question {
   background: #fefefe;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-  padding: 24px;
+  padding: 1.5rem;
 
   & + .question {
-    margin-top: 8px;
+    margin-top: 0.5rem;
   }
 
   &.highlighted {
@@ -29,7 +29,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 24px;
+    margin-top: 1.5rem;
 
     .user-info {
       display: flex;
@@ -50,13 +50,13 @@
 
     > div {
       display: flex;
-      gap: 16px;
+      gap: 1rem;
     }
 
     button {
       border: 0;
       background: transparent;
-      gap: 8px;
+      gap: 0.5rem;
       transition: filter 0.2s;
       &.like-button {
         display: flex;

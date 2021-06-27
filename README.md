@@ -32,7 +32,7 @@ $ git clone https://github.com/JonathaGomes/letmeask && cd letmeask
 $ yarn
 
 # Starting the project
-$ yarn dev
+$ yarn start
 ```
 
 ## 🚀 Technologies

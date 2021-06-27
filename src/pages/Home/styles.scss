@@ -6,7 +6,7 @@
   aside {
     flex: 7;
 
-    background: #835afd;
+    background: var(--purple);
     color: #fff;
 
     display: flex;
@@ -67,7 +67,7 @@
         border-radius: 0.5rem;
         padding: 0 1rem;
         background: #fff;
-        border: 1px solid #a8a8b3;
+        border: 1px solid var(--gray);
         font-size: 1rem;
       }
 
@@ -83,11 +83,11 @@
 
     p {
       font-size: 0.875rem;
-      color: #737380;
+      color: var(--gray-50);
       margin-top: 1rem;
 
       a {
-        color: #835afd;
+        color: var(--purple);
       }
     }
   }
@@ -121,7 +121,7 @@
 
   .separator {
     font-size: 0.875rem;
-    color: #a8a8b3;
+    color: var(--gray);
 
     margin: 2rem 0;
     display: flex;
@@ -131,7 +131,7 @@
       content: "";
       flex: 1;
       height: 1px;
-      background: #a8a8b3;
+      background: var(--gray);
       margin-right: 1rem;
     }
 
@@ -139,7 +139,7 @@
       content: "";
       flex: 1;
       height: 1px;
-      background: #a8a8b3;
+      background: var(--gray);
       margin-left: 1rem;
     }
   }

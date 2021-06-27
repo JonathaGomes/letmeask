@@ -2,7 +2,7 @@
   height: 3.125rem;
   border-radius: 0.5rem;
   font-weight: 500;
-  background: #853afd;
+  background: var(--purple);
   color: #fff;
   padding: 0 2rem;
   font-size: 1rem;
@@ -21,8 +21,8 @@
 
   &.outlined {
     background: #fff;
-    border: 1px solid #853afd;
-    color: #853afd;
+    border: 1px solid var(--purple);
+    color: var(--purple);
   }
 
   &:not(:disabled):hover {

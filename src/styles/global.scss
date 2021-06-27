@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --purple: #835afd;
+  --gray: #a8a8b3;
+  --gray-50: #737380;
+  --black: #29292e;
+  --white: #fefefe;
+}
+
 @media (max-width: 1080px) {
   html {
     font-size: 93.75%; // 15px

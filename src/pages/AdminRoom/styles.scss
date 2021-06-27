@@ -37,7 +37,7 @@
       h1 {
         font-family: "Poppins", sans-serif;
         font-size: 1.5rem;
-        color: #29292e;
+        color: var(--black);
       }
 
       span {
@@ -57,7 +57,7 @@
         border: 0;
         padding: 1rem;
         border-radius: 0.5rem;
-        background: #fefefe;
+        background: var(--white);
         box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
         resize: vertical;
         min-height: 8.125rem;

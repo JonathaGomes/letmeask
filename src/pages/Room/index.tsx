@@ -12,6 +12,7 @@ import { Question } from "../../components/Question";
 
 import logoSvg from "../../assets/images/logo.svg";
 
+import { useHistory } from "react-router-dom";
 import "./styles.scss";
 
 type RoomParams = {
@@ -19,11 +20,12 @@ type RoomParams = {
 };
 
 export function Room() {
+  const history = useHistory();
   const params = useParams<RoomParams>();
   const roomId = params.id;
 
   const { user } = useAuth();
-  const { title, questions } = useRoom(roomId);
+  const { title, questions, endedAt } = useRoom(roomId);
   const [newQuestion, setNewQuestion] = useState("");
 
   async function handleSendNewQuestion(
@@ -66,6 +68,11 @@ export function Room() {
         authorId: user?.id,
       });
     }
+  }
+
+  if (endedAt) {
+    alert("Essa sala já foi encerrada!");
+    history.push("/");
   }
   return (
     <div id="page-room">
